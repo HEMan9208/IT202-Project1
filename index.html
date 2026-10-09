@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving On Up - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <h1>Moving On Up</h1>
+        <h2>Moving Representative Login</h2>
+
+        <form id="movingForm">
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName">
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+
+            <label for="repID">Representative ID:</label>
+            <input type="text" id="repID" name="repID">
+
+            <label for="phone">Phone Number with Extension:</label>
+            <input type="text" id="phone" name="phone">
+
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" name="email">
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="confirmation"
+                       name="confirmation">
+                <label for="confirmation">
+                    Request Email Confirmation
+                </label>
+            </div>
+
+            <label for="transaction">Select a Transaction:</label>
+            <select id="transaction" name="transaction">
+                <option value="">-- Select a Transaction --</option>
+                <option value="search">
+                    Search A Moving Representative's Accounts
+                </option>
+                <option value="book">
+                    Book a Client's Moving Event
+                </option>
+                <option value="cancel">
+                    Cancel A Client's Moving Event
+                </option>
+                <option value="services">
+                    Request Moving Services
+                </option>
+                <option value="additional">
+                    Request Additional Moving Services
+                </option>
+                <option value="create">
+                    Create A New Client Account
+                </option>
+            </select>
+
+            <div class="button-group">
+                <input type="submit" id="submitBtn"
+                       name="submitBtn" value="Submit">
+                <input type="reset" id="resetBtn"
+                       name="resetBtn" value="Reset">
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
